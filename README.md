@@ -222,7 +222,31 @@ skill-seekers scrape --config configs/react.json
 
 **NEW in v2.4.0:** MCP server now supports 5 AI coding agents with automatic configuration!
 
-### Option 5: Legacy CLI (Backwards Compatible)
+### Option 5: Web Interface (NEW - Visual Workflow)
+
+```bash
+# Install with web interface support
+pip install -e ".[web]"
+
+# Launch the web interface
+skill-seekers-web
+
+# Or use streamlit directly
+streamlit run src/skill_seekers/webapp.py
+```
+
+The web interface provides a visual way to:
+- 📝 **Configuration Generator** - Create configs without writing JSON
+- 🌐 **Documentation Scraper** - Scrape with a visual interface
+- 📦 **Skill Packager** - Package for different platforms
+- ☁️ **Upload to Platforms** - Upload to Claude, Gemini, OpenAI
+- 🔄 **Complete Workflow** - One-click automation from URL to uploaded skill
+
+**Time:** ~25 minutes | **Quality:** Production-ready | **Cost:** Free | **Experience:** Visual & Interactive
+
+📖 **[Web Interface Documentation](docs/WEB_INTERFACE.md)** - Complete guide with screenshots
+
+### Option 6: Legacy CLI (Backwards Compatible)
 
 ```bash
 # Install dependencies

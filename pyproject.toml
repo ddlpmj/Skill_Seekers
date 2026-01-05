@@ -99,6 +99,11 @@ all = [
     "openai>=1.0.0",
 ]
 
+# Web interface dependencies
+web = [
+    "streamlit>=1.28.0",
+]
+
 [project.urls]
 Homepage = "https://github.com/yusufkaraaslan/Skill_Seekers"
 Repository = "https://github.com/yusufkaraaslan/Skill_Seekers"
@@ -122,6 +127,7 @@ skill-seekers-install = "skill_seekers.cli.install_skill:main"
 skill-seekers-install-agent = "skill_seekers.cli.install_agent:main"
 skill-seekers-codebase = "skill_seekers.cli.codebase_scraper:main"
 skill-seekers-patterns = "skill_seekers.cli.pattern_recognizer:main"
+skill-seekers-web = "skill_seekers.webapp:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
